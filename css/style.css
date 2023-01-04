@@ -5,17 +5,22 @@
   color: white;
 }
 
+body {
+  background-color: #242424;
+}
+
 a {
   text-decoration: none;
 }
 
 nav {
-  background-color: #242424;
+  background-color: #24242482;
   height: 9vh;
   padding: 0 2rem;
   align-items: center;
   display: flex;
   justify-content: space-around;
+  margin-bottom: 3rem;
 }
 
 nav .NavLeft {
@@ -128,4 +133,83 @@ nav .NavRight .NavSociaux i {
 
 nav .NavRight .NavSociaux i:hover {
   color: white;
+}
+
+header {
+  /* height: 100vh; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header .HeaderContainer {
+  display: flex;
+}
+
+header .HeaderContainer .HeaderLeft {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+header .HeaderContainer .HeaderLeft h1 {
+  font-size: 4rem;
+}
+
+header .HeaderContainer .HeaderLeft span {
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  padding: 2rem 0;
+}
+
+header .HeaderContainer .HeaderLeft .HeaderBTN a button {
+  padding: 0.8rem 1.4rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #424242;
+  border: 1px solid #545454;
+  transition: 0.2s;
+  margin-right: 0.4rem;
+}
+
+header .HeaderContainer .HeaderLeft .HeaderBTN a button:hover {
+  background-color: #545454;
+}
+
+header .HeaderContainer .HeaderLeft .HeaderBTN a #BlueBTN {
+  padding: 0.8rem 1.4rem;
+  background-color: #6f77ff;
+  border: 1px solid #8b91ff;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
+header .HeaderContainer .HeaderLeft .HeaderBTN a #BlueBTN:hover {
+  background-color: #8b91ff;
+}
+
+header .HeaderContainer .HeaderRight img {
+  height: 320px;
+  border-radius: 50%;
+  background: rgb(130, 58, 176);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(130, 58, 176, 0.6657256652661064) 0%,
+    rgba(91, 105, 165, 0.7805716036414566) 37%,
+    rgba(36, 36, 36, 0.6265099789915967) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(130, 58, 176, 0.6657256652661064) 0%,
+    rgba(91, 105, 165, 0.7805716036414566) 37%,
+    rgba(36, 36, 36, 0.6265099789915967) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(130, 58, 176, 0.6657256652661064) 0%,
+    rgba(91, 105, 165, 0.7805716036414566) 37%,
+    rgba(36, 36, 36, 0.6265099789915967) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#823ab0",endColorstr="#242424",GradientType=1);
 }
