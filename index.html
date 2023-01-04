@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/app.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <!-- Partie gauche de la navbar -->
+      <div class="NavLeft">
+        <a href="index.html">
+          <!-- Logo de la navbar -->
+          <div class="logo">
+            <img id="Navlogo" src="./img/logo.png" alt="logo" />
+          </div>
+          <!-- Nom du site -->
+          <div class="vite">
+            <p>Vite</p>
+          </div>
+        </a>
+        <!-- Searchbar + Raccourcis -->
+        <div class="searchbar">
+          <label for="searchbar">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            <input id="searchbar" type="search" placeholder="Search" />
+          </label>
+          <div class="commandk">
+            <p>⌘ K</p>
+          </div>
+        </div>
+      </div>
+      <!-- Partie droite de la navbar -->
+      <div class="NavRight">
+        <!-- Liens de la navbar -->
+        <div class="NavLiens">
+          <a href="#">Guide</a>
+          <a href="#">Config</a>
+          <a href="#">Plugins</a>
+          <a href="#">Resources ▾</a>
+          <a href="#">Version ▾</a>
+        </div>
+        <!-- Lien traduction navbar -->
+        <div class="NavTrad">
+          <a href="#"><img src="./img/trad.png" alt="changer-la-langue-du-site" /></a>
+          <p>▾</p>
+        </div>
+        <!-- Button mode sombre navbar -->
+        <div class="DarkButton">
+          <button>X</button>
+        </div>
+        <div class="NavSociaux">
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-discord"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: #242424;
+  height: 9vh;
+  padding: 0 2rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav .NavLeft {
+  display: flex;
+  align-items: center;
+}
+
+nav .NavLeft a {
+  display: flex;
+  align-items: center;
+}
+
+nav .NavLeft a .logo img {
+  margin-right: 0.1rem;
+  height: 35px;
+}
+
+nav .NavLeft a .vite {
+  letter-spacing: 0.1rem;
+}
+
+nav .NavLeft .searchbar {
+  margin-left: 2.2rem;
+  background-color: #1a1a1a;
+  padding: 0.6rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+nav .NavLeft .searchbar i {
+  color: #757575;
+  cursor: pointer;
+}
+
+nav .NavLeft .searchbar #searchbar {
+  background-color: #1a1a1a;
+  border: none;
+  /* padding: 0.6rem; */
+  outline: none;
+  width: 4rem;
+}
+
+nav .NavLeft .searchbar .commandk {
+  border: 1px solid #757575;
+  padding: 0.3rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+nav .NavLeft .searchbar .commandk p {
+  color: #757575;
+}
+
+nav .NavRight {
+  font-size: 0.9rem;
+  display: flex;
+  /* align-items: center; */
+}
+
+nav .NavRight .NavLiens {
+  padding: 0 1rem;
+  border-right: 1px solid #757575;
+}
+
+nav .NavRight .NavLiens a {
+  padding: 0 1rem;
+}
+
+nav .NavRight .NavTrad {
+  display: flex;
+  padding: 0 1rem;
+  border-right: 1px solid #757575;
+}
+
+nav .NavRight .NavTrad img {
+  padding-right: 0.4rem;
+  height: 1.2rem;
+  color: white;
+}
+
+nav .NavRight .DarkButton {
+  padding: 0 1rem;
+  border-right: 1px solid #757575;
+}
+
+nav .NavRight .DarkButton button {
+  border: none;
+  width: 2rem;
+  background-color: transparent;
+  border: 1px solid #757575;
+}
+
+nav .NavRight .DarkButton button i {
+  color: black;
+}
+
+nav .NavRight .NavSociaux {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+nav .NavRight .NavSociaux i {
+  color: #757575;
+  padding-right: 0.8rem;
+  font-size: 1.2rem;
+  transition: 0.5s;
+}
+
+nav .NavRight .NavSociaux i:hover {
+  color: white;
+}
