@@ -86,8 +86,17 @@ nav .NavRight .NavLiens {
   border-right: 1px solid #757575;
 }
 
+nav .NavRight .NavLiens .LienBlue:hover {
+  color: #9499ff;
+}
+
+nav .NavRight .NavLiens .LienGris:hover {
+  color: #999a9a;
+}
+
 nav .NavRight .NavLiens a {
   padding: 0 1rem;
+  transition: 0.3s;
 }
 
 nav .NavRight .NavTrad {
