@@ -21,7 +21,7 @@ nav {
   padding: 0 2rem;
   align-items: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 3rem;
 }
 
@@ -209,9 +209,10 @@ nav .NavRight .NavSociaux i:hover {
 header {
   /* height: 100vh; */
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   padding-bottom: 4rem;
+  padding-left: 17.5rem;
 }
 
 header .HeaderContainer {
@@ -285,6 +286,7 @@ header .HeaderContainer .HeaderRight img {
 main {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 main .firstmain {
@@ -299,9 +301,11 @@ main .Aligne,
   flex-wrap: wrap;
 }
 
-/* main .Bligne {
-  background-color: red;
-} */
+main .Bligne {
+  padding-bottom: 6rem;
+  border-bottom: 1px solid #777777;
+  width: 100vw;
+}
 
 main .main {
   width: 23vw;
@@ -331,4 +335,85 @@ main .main p {
   font-size: 0.8rem;
   line-height: 1.2rem;
   color: #777777;
+}
+
+main .secondmain {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+main .secondmain .smainText {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+main .secondmain .smainText i {
+  font-size: 30px;
+  padding-bottom: 1rem;
+  color: #707070;
+}
+
+main .secondmain .smainText p {
+  line-height: 1.2em;
+  color: #9a9a9a;
+}
+
+main .secondmain .smainText #possible {
+  padding-bottom: 1.5rem;
+}
+
+main .secondmain .sponsors {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  flex-direction: column;
+  /* background-color: red; */
+}
+
+main .secondmain .sponsors .platinium {
+  background-color: #2f2f2f;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 20px 20px 0 0;
+  margin-bottom: 0.2rem;
+}
+
+main .secondmain .sponsors .platinium p {
+  color: #9a9a9a;
+}
+
+main .secondmain .sponsors .spline2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding-bottom: 0.2rem;
+  /* padding: 5rem; */
+}
+
+main .secondmain .sponsors .spline2 .caseline2 {
+  background-color: #2f2f2f;
+  text-align: center;
+  width: 100%;
+  padding: 4rem 0;
+}
+
+main .secondmain .sponsors .spline2 .caseline2:first-child {
+  margin-right: 0.2rem;
+}
+
+main .secondmain .sponsors .gold {
+  background-color: #2f2f2f;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+main .secondmain .sponsors .gold p {
+  color: #9a9a9a;
 }
