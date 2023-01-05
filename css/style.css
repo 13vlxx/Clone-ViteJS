@@ -208,15 +208,14 @@ nav .NavRight .NavSociaux i:hover {
 
 header {
   /* height: 100vh; */
-  display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 4rem;
-  padding-left: 17.5rem;
 }
 
 header .HeaderContainer {
   display: flex;
+  justify-content: space-evenly;
 }
 
 header .HeaderContainer .HeaderLeft {
