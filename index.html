@@ -53,14 +53,16 @@
         <!-- Lien traduction navbar -->
         <div class="NavTrad">
           <a class="LienGris" href="#"
-            ><img src="./img/trad.png" alt="changer-la-langue-du-site"
-          /></a>
-          <p>▾</p>
+            ><img src="./img/trad.png" alt="changer-la-langue-du-site" />
+            <p>▾</p></a
+          >
         </div>
         <!-- Button mode sombre navbar -->
         <div class="DarkButton">
-          <button>X</button>
+          <input type="checkbox" id="darkmode" />
+          <label id="darklabel" for="darkmode"></label>
         </div>
+        <!-- Lien réseaux sociaux -->
         <div class="NavSociaux">
           <a href="#"><i class="fa-brands fa-twitter"></i></a>
           <a href="#"><i class="fa-brands fa-discord"></i></a>
@@ -68,19 +70,23 @@
         </div>
       </div>
     </nav>
+    <!-- Header -->
     <header>
       <section class="HeaderContainer">
+        <!-- Text gauche du header -->
         <div class="HeaderLeft">
           <h1>Vite</h1>
           <h1>Next Generation</h1>
           <h1>Frontend Tooling</h1>
           <span>Get ready for a development environment that can finally catch up with you.</span>
+          <!-- Buttons header -->
           <div class="HeaderBTN">
             <a href="#"><button id="BlueBTN">Get Started</button></a>
             <a href="#"><button>Why Vite ?</button></a>
             <a href="#"><button>View on GitHub</button></a>
           </div>
         </div>
+        <!-- Image header droit -->
         <div class="HeaderRight">
           <img src="./img/logo.png" alt="Vite-logo" />
         </div>

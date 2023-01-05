@@ -13,6 +13,8 @@ a {
   text-decoration: none;
 }
 
+/* Styles bare de navigation */
+
 nav {
   background-color: #24242482;
   height: 9vh;
@@ -105,6 +107,10 @@ nav .NavRight .NavTrad {
   border-right: 1px solid #757575;
 }
 
+nav .NavRight .NavTrad a {
+  display: flex;
+}
+
 nav .NavRight .NavTrad img {
   padding-right: 0.4rem;
   height: 1.2rem;
@@ -114,9 +120,55 @@ nav .NavRight .NavTrad img {
 nav .NavRight .DarkButton {
   padding: 0 1rem;
   border-right: 1px solid #757575;
+  display: flex;
 }
 
-nav .NavRight .DarkButton button {
+nav .NavRight .DarkButton label {
+  width: 50px;
+  height: 20px;
+  position: relative;
+  display: block;
+  background-color: #242424;
+  border-radius: 200px;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+nav .NavRight .DarkButton label::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  background-color: white;
+  border-radius: 200px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+nav .NavRight .DarkButton input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+nav .NavRight .DarkButton input:checked + label {
+  background-color: white;
+}
+
+nav .NavRight .DarkButton input:checked + label::after {
+  content: "";
+  left: 33px;
+  background-color: white;
+}
+
+nav .NavRight .DarkButton input:checked + label + main {
+  background-color: white;
+}
+
+/* nav .NavRight .DarkButton button {
   border: none;
   width: 2rem;
   background-color: transparent;
@@ -125,7 +177,7 @@ nav .NavRight .DarkButton button {
 
 nav .NavRight .DarkButton button i {
   color: black;
-}
+} */
 
 nav .NavRight .NavSociaux {
   display: flex;
@@ -143,6 +195,10 @@ nav .NavRight .NavSociaux i {
 nav .NavRight .NavSociaux i:hover {
   color: white;
 }
+
+/* Fin des styles de la barre de nav */
+
+/* Styles pour le header */
 
 header {
   /* height: 100vh; */
@@ -166,6 +222,8 @@ header .HeaderContainer .HeaderLeft h1 {
 }
 
 header .HeaderContainer .HeaderLeft span {
+  color: #757575;
+  line-height: 2rem;
   font-size: 1.4rem;
   letter-spacing: 0.1rem;
   padding: 2rem 0;
