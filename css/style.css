@@ -303,7 +303,7 @@ main .Aligne,
 
 main .Bligne {
   padding-bottom: 6rem;
-  border-bottom: 1px solid #777777;
+  border-bottom: 1px solid #2f2f2f;
   width: 100vw;
 }
 
@@ -399,7 +399,12 @@ main .secondmain .sponsors .spline2 .caseline2 {
   background-color: #2f2f2f;
   text-align: center;
   width: 100%;
+  transition: 0.3s;
   padding: 4rem 0;
+}
+
+main .secondmain .sponsors .spline2 .caseline2:hover {
+  background-color: white;
 }
 
 main .secondmain .sponsors .spline2 .caseline2:first-child {
@@ -415,5 +420,78 @@ main .secondmain .sponsors .gold {
 }
 
 main .secondmain .sponsors .gold p {
+  color: #9a9a9a;
+}
+
+.spline4,
+.spline5 {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding-bottom: 0.2rem;
+}
+
+.caseline4,
+.caseline5 {
+  background-color: #2f2f2f;
+  text-align: center;
+  width: 100%;
+  padding: 3rem 0;
+  border-right: 0.2rem solid #242424;
+}
+
+.anim {
+  transition: 0.3s;
+}
+
+.anim:hover {
+  background-color: white;
+}
+
+#line4,
+#line5 {
+  border: none;
+}
+
+#lineleft {
+  border-radius: 0 0 0 20px;
+}
+
+#line5 {
+  border-radius: 0 0 20px 0;
+}
+
+main .secondmain .bspons {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #2f2f2f;
+}
+
+main .secondmain .bspons button {
+  margin-top: 2rem;
+  background-color: transparent;
+  border: 1px solid #9a9a9a;
+  padding: 0.8rem;
+  border-radius: 50px;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  color: #9a9a9a;
+  transition: 0.3s;
+}
+
+main .secondmain .bspons button:hover {
+  color: #fb1e7b;
+  border: 1px solid #fb1e7b;
+}
+
+footer {
+  text-align: center;
+  padding: 1.6rem 0;
+}
+
+footer p {
+  font-size: 0.8rem;
   color: #9a9a9a;
 }
