@@ -211,6 +211,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding-bottom: 4rem;
 }
 
 header .HeaderContainer {
@@ -225,6 +226,13 @@ header .HeaderContainer .HeaderLeft {
 
 header .HeaderContainer .HeaderLeft h1 {
   font-size: 4rem;
+}
+
+header .HeaderContainer .HeaderLeft #HeaderVite {
+  background: linear-gradient(-45deg, #bd34fe 70%, #63a8ff);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 header .HeaderContainer .HeaderLeft span {
@@ -262,15 +270,65 @@ header .HeaderContainer .HeaderLeft .HeaderBTN a #BlueBTN:hover {
   background-color: #8b91ff;
 }
 
-header .HeaderContainer .HeaderRight {
-  box-shadow: #6f77ff;
-}
+/* header .HeaderContainer .HeaderRight {
+
+} */
 
 header .HeaderContainer .HeaderRight img {
   height: 320px;
   border-radius: 50%;
-  border-radius: 50%;
   filter: drop-shadow(0 0 50px rgb(100, 108, 255));
-  /* background: linear-gradient(-45deg,#ae00ff , #48C7FF ); */
-  /* background-image: radial-gradient(#d400ff 20%, #48c7ff 50%, transparent 70%); */
+}
+
+/* Style pour le main */
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+main .firstmain {
+  color: red;
+}
+
+main .Aligne,
+.Bligne {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+/* main .Bligne {
+  background-color: red;
+} */
+
+main .main {
+  width: 23vw;
+  background-color: #2f2f2f;
+  border-radius: 10px;
+  margin-right: 1rem;
+  padding: 1rem 2rem;
+}
+
+main .main .img {
+  background-color: #202020;
+  width: 1vw;
+  padding: 1rem;
+  height: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+main .main h1 {
+  font-size: 1rem;
+  padding: 0.6rem 0;
+}
+
+main .main p {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  color: #777777;
 }
