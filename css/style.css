@@ -23,6 +23,9 @@ nav {
   display: flex;
   justify-content: space-between;
   margin-bottom: 3rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 nav .NavLeft {
@@ -215,7 +218,8 @@ header {
 
 header .HeaderContainer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
 }
 
 header .HeaderContainer .HeaderLeft {
@@ -241,6 +245,12 @@ header .HeaderContainer .HeaderLeft span {
   font-size: 1.4rem;
   letter-spacing: 0.1rem;
   padding: 2rem 0;
+}
+
+header .HeaderContainer .HeaderLeft .HeaderBTN {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 header .HeaderContainer .HeaderLeft .HeaderBTN a button {
@@ -274,6 +284,10 @@ header .HeaderContainer .HeaderLeft .HeaderBTN a #BlueBTN:hover {
 
 } */
 
+header .HeaderContainer .HeaderRight {
+  margin-right: 10rem;
+}
+
 header .HeaderContainer .HeaderRight img {
   height: 320px;
   border-radius: 50%;
@@ -286,10 +300,6 @@ main {
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-
-main .firstmain {
-  color: red;
 }
 
 main .Aligne,
@@ -307,7 +317,7 @@ main .Bligne {
 }
 
 main .main {
-  width: 23vw;
+  width: 25vw;
   background-color: #2f2f2f;
   border-radius: 10px;
   margin-right: 1rem;
@@ -341,7 +351,7 @@ main .secondmain {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  /* height: 90vh; */
 }
 
 main .secondmain .smainText {
@@ -486,11 +496,133 @@ main .secondmain .bspons button:hover {
 }
 
 footer {
-  text-align: center;
-  padding: 1.6rem 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 footer p {
   font-size: 0.8rem;
   color: #9a9a9a;
+}
+
+@media screen and (max-width: 390px) {
+  nav .NavLeft .searchbar {
+    display: none;
+  }
+
+  nav .NavRight {
+    display: none;
+  }
+  nav {
+    justify-content: space-between;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  header .HeaderContainer .HeaderLeft {
+    width: 80%;
+  }
+
+  header .HeaderContainer .HeaderLeft h1 {
+    flex-direction: column;
+    font-size: 2rem;
+    text-align: center;
+    display: inline;
+  }
+
+  header .HeaderContainer .HeaderLeft span {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  header .HeaderContainer .HeaderLeft .HeaderBTN {
+    display: flex;
+  }
+
+  header .HeaderContainer .HeaderLeft .HeaderBTN button {
+    margin-bottom: 0.8rem;
+  }
+
+  header .HeaderContainer .HeaderRight {
+    margin: 0;
+  }
+
+  /* main {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  .Aligne {
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  main .main {
+    width: 80%;
+    margin: 0;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+  }
+
+  main .secondmain .smainText {
+    font-size: 1rem;
+  }
+
+  main .secondmain .sponsors .spline2 {
+    flex-direction: column;
+    display: grid;
+    align-items: center;
+    justify-content: stretch;
+  }
+
+  main .secondmain .sponsors .spline2 img {
+    max-width: 100%;
+  }
+
+  main .secondmain .sponsors .spline4 {
+    flex-direction: column;
+  }
+
+  main .secondmain .sponsors .spline4 img {
+    max-width: 100%;
+  }
+
+  main .secondmain .sponsors .spline5 {
+    flex-direction: column;
+  }
+
+  main .secondmain .sponsors .spline5 img {
+    max-width: 100%;
+  }
+
+  .caseline2 {
+    margin-bottom: 0.2rem;
+  }
+  .caseline4 {
+    margin-bottom: 0.2rem;
+  }
+  .caseline5 {
+    margin-bottom: 0.2rem;
+  }
+
+  .none {
+    display: none;
+  }
+
+  #lineleft {
+    border-radius: 0;
+  }
+
+  #pine {
+    border-radius: 0 0 20px 20px;
+  }
 }
