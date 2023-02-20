@@ -3,6 +3,7 @@
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
   color: white;
+  transition: all 0.3s;
 }
 
 body {
@@ -139,7 +140,8 @@ nav .NavRight .DarkButton label {
   display: block;
   background-color: #242424;
   border-radius: 200px;
-  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  filter: drop-shadow(30px 90px 60px #d091fd) drop-shadow(90px -20px 60px #d091fd)
+    drop-shadow(-30px -90px 60px #6ecffc) drop-shadow(-90px 20px 60px #6ecffc);
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -508,7 +510,7 @@ footer p {
   color: #9a9a9a;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 1080px) {
   nav .NavLeft .searchbar {
     display: none;
   }
@@ -625,4 +627,69 @@ footer p {
   #pine {
     border-radius: 0 0 20px 20px;
   }
+}
+
+/** Toggle dark mode  */
+
+.active nav {
+  background-color: rgba(255, 255, 255, 0.774);
+}
+
+.active nav a {
+  color: black;
+}
+
+.active nav .NavSociaux i:hover {
+  color: black;
+}
+
+.active {
+  background-color: white;
+}
+
+.active nav .searchbar {
+  border: 1px solid black;
+  background-color: white;
+}
+
+.active nav .NavLeft .searchbar #searchbar {
+  background-color: white;
+}
+
+.active .HeaderLeft h1 {
+  color: black;
+}
+
+.active main .img {
+  background-color: #e3e3e5;
+}
+
+.active main .main {
+  background-color: rgb(240, 240, 240);
+}
+
+.active main .main h1,
+.active main .main p {
+  color: black;
+}
+
+.active main .secondmain .sponsors .platinium,
+.active main .secondmain .sponsors .spline2 .caseline2,
+.active main .secondmain .sponsors .gold,
+.active .caseline4,
+.active .caseline5 {
+  background-color: #f6f6f7;
+}
+.active main .secondmain .sponsors .spline2 .caseline2:hover {
+  background-color: #e3e3e5;
+}
+
+.active .caseline4,
+.active .caseline5 {
+  border-right: 0.2rem solid white;
+}
+
+.active .caseline4:hover,
+.active .caseline5:hover {
+  background-color: #e3e3e5;
 }
